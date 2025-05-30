@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 5, SASS and PUG.js. It's fully customizable and modular.">
+    
+    <title>Psikolojik Hastalıklar: Yeme Bozukluğu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="dashboard.html"><img src="images/logo.png"alt="Mentalia Logo"style=height:40px;></a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <li class="app-search">
+          <input class="app-search__input" type="search" placeholder="Ara">
+          <button class="app-search__button"><i class="bi bi-search"></i></button>
+        </li>
+        <!--Notification Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell fs-5"></i></a>
+          <ul class="app-notification dropdown-menu dropdown-menu-right">
+            <li class="app-notification__title">Henüz bildiriminiz yok.</li>
+          </ul>
+        </li>
+        <!-- User Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Open Profile Menu"><i class="bi bi-person fs-4"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            
+            <li><a class="dropdown-item" href="profil.html"><i class="bi bi-person me-2 fs-5"></i> Profil</a></li>
+            <li><a class="dropdown-item" href="register.html"><i class="bi bi-box-arrow-in-left me-2 fs-5"></i> Üye Ol / Giriş Yap</a></li>
+            <li><a class="dropdown-item" href="cıkıs.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Çıkış</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="dashboard.html"><i class="bi bi-house-door"style="margin-right: 8px;"></i><span class="app-menu__label"> Anasayfa</span></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="bi bi-heart-pulse"style="margin-right: 8px;"></i><span class="app-menu__label">Psikolojik Hastalıklar</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="depresyon.html"><i class="icon bi bi-circle-fill"></i> Depresyon</a></li>
+            <li><a class="treeview-item" href="anksiyete.html"><i class="icon bi bi-circle-fill"></i> Anksiyete</a></li>
+            <li><a class="treeview-item" href="bipolar.html"><i class="icon bi bi-circle-fill"></i> Bipolar Bozukluk</a></li>
+            <li><a class="treeview-item" href="okb.html"><i class="icon bi bi-circle-fill"></i> Obsesif Komppulsif Bozukluk</a></li>
+            <li><a class="treeview-item" href="sizofreni.html"><i class="icon bi bi-circle-fill"></i> Şizofreni</a></li>
+            <li><a class="treeview-item active" href="yemebozuklugu.html"><i class="icon bi bi-circle-fill"></i> Yeme Bozukluğu</a></li>
+            <li><a class="treeview-item" href="hiperaktivite.html"><i class="icon bi bi-circle-fill"></i> Hiperaktivite Bozukluğu</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="bi bi-clipboard2-data"style="margin-right: 8px;"></i><span class="app-menu__label">Görülme Oranları</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="sehir.html"><i class="icon bi bi-circle-fill"></i> Şehirlere Göre</a></li>
+            <li><a class="treeview-item" href="cinsiyet.html"><i class="icon bi bi-circle-fill"></i> Cinsiyete Göre</a></li>
+            <li><a class="treeview-item" href="yas.html"><i class="icon bi bi-circle-fill"></i> Yaşa Göre</a></li>
+            <li><a class="treeview-item" href="genetik.html"><i class="icon bi bi-circle-fill"></i> Genetiğe Göre</a></li>
+            <li><a class="treeview-item" href="cevrefaktor.html"><i class="icon bi bi-circle-fill"></i> Çevresel Etkenlere Göre</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-ui-checks"></i><span class="app-menu__label">Testler</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="psikotest.html"><i class="icon bi bi-circle-fill"></i> Psikolojik Hastalık Belirleme Testi</a></li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="bi bi-bar-chart-line"style="margin-right: 8px;"></i><span class="app-menu__label">Grafikler ve Tablolar</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="verigrafik.html"><i class="icon bi bi-circle-fill"></i> Veri Grafikleri</a></li>
+            <li><a class="treeview-item" href="veritablo.html"><i class="icon bi bi-circle-fill"></i> Veri Tabloları</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="app-content">
+      <div class="app-title">
+        <div class="div">
+          <h1> Psikolojik Hastalılar</h1>
+          <p>Yeme Bozukluğu</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
+          <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col md-12">
+          <div class="card" style="width: auto; padding: 15px;">
+
+      <p> 
+      <b>Yeme Bozukluğu Nedir? </b><br><br>
+      Yeme bozuklukları, bireyin yeme davranışları ve vücut algısıyla ilgili ciddi psikolojik rahatsızlıklardır. Bu bozukluklar; yeme alışkanlıklarında aşırı kısıtlama, aşırı yeme, yedikten sonra çıkarma gibi sağlıksız davranışlarla birlikte, beden ağırlığı ve şekli üzerine yoğun takıntılar içerir.
+
+      Yeme bozuklukları yalnızca “diyet yapma” ya da “formda kalma isteği” değildir; fiziksel ve ruhsal sağlığı tehdit eden, mutlaka profesyonel destek gerektiren psikolojik hastalıklardır. <br><br><br>
+
+       <b>Yeme Bozukluğu Türleri Nelerdir? </b><br><br>
+      🟣 Anoreksiya Nervoza <br> <br>
+      Aşırı kilo alma korkusu nedeniyle yemeyi reddetme <br>
+
+      Çok düşük kiloda olmalarına rağmen kendilerini kilolu hissetme <br>
+
+      Aşırı egzersiz yapma, kalori kısıtlama <br>
+
+      Menstruasyonun (adet döngüsünün) durması <br>
+
+      Ciddi kilo kaybı, vücutta zayıflama <br><br><br>
+
+      🔵 Bulimiya Nervoza <br><br>
+      Kısa sürede aşırı miktarda yemek yeme (tıkınırcasına yeme) <br>
+
+      Ardından suçluluk hissiyle kusma, laksatif kullanma, aşırı egzersiz yapma gibi telafi edici davranışlar <br>
+
+      Normal veya hafif kiloda olsalar da vücut algıları bozuktur <br>
+
+      Dışarıdan fark edilmesi daha zordur, ancak fiziksel ve psikolojik etkileri ağırdır <br><br>
+
+      🟠 Tıkınırcasına Yeme Bozukluğu (Binge Eating Disorder) <br><br>
+      Kontrolsüz bir şekilde çok fazla yemek yeme <br>
+
+      Yeme sırasında duramama, fiziksel olarak rahatsız olana kadar yeme <br>
+
+      Kusma ya da başka telafi davranışları görülmez <br>
+
+      Sonrasında yoğun pişmanlık, suçluluk ve utanç hissi <br>
+
+      Obezite riski artabilir <br><br>
+
+      🟡 Diğer Belirtilen Yeme Bozuklukları <br><br> 
+      Yukarıdaki kriterlere tam uymayan, ancak ciddi düzeyde rahatsızlık yaratan yeme davranışları (örneğin ortoreksiya: sağlıklı beslenmeye saplantılı şekilde takıntı geliştirme) <br><br><br>
+
+      <b>Yeme Bozukluklarının Belirtileri Nelerdir? </b><br><br>
+      Sürekli kilo, kalori ya da diyetle meşgul olma <br>
+
+      Aşırı yemek yeme ya da yemeği tamamen reddetme <br>
+
+      Yedikten sonra gizlice kusma ya da tuvalete gitme alışkanlığı <br>
+
+      Sosyal ortamlarda yemek yemekten kaçınma <br>
+
+      Vücut ağırlığına ya da şekline göre kendini değerli hissetme <br>
+
+      Depresyon, kaygı bozukluğu, özgüven eksikliği <br><br><br>
+
+      <b>Yeme Bozuklukları Neden Olur? </b><br><br>
+      Yeme bozukluklarının ortaya çıkmasında biyolojik, psikolojik ve çevresel birçok faktör rol oynar: <br><br>
+
+      Düşük benlik saygısı ve beden algısı bozukluğu <br>
+
+      Travma, zorbalık veya istismar geçmişi <br>
+
+      Aile içi baskılar veya sağlıksız yeme alışkanlıkları <br>
+
+      Toplumda güzellik algısı ve medya etkisi <br>
+
+      Depresyon, anksiyete gibi diğer psikolojik rahatsızlıklar <br>
+
+      Genetik yatkınlık ve beyin kimyasındaki dengesizlikler <br><br><br>
+
+      <b>Yeme Bozuklukları Nasıl Tedavi Edilir? </b><br><br>
+      Yeme bozuklukları ciddi ve çok yönlü tedavi gerektiren hastalıklardır. Erken tanı ve müdahale ile iyileşme mümkündür. <br><br>
+
+      Psikoterapi: Özellikle bilişsel davranışçı terapi (BDT) ve aile temelli terapi oldukça etkilidir. <br>
+
+      Beslenme danışmanlığı: Sağlıklı ve dengeli bir beslenme düzeninin oluşturulması için uzman desteği alınmalıdır. <br>
+
+      Tıbbi takip: Elektrolit dengesizlikleri, kalp problemleri gibi fiziksel sağlık sorunlarının izlenmesi önemlidir. <br>
+
+      İlaç tedavisi: Eşlik eden depresyon ya da anksiyete gibi durumlarda psikiyatrik ilaç tedavisi uygulanabilir. <br><br><br>
+
+      <b>Ne Zaman Yardım Alınmalı? </b><br><br>
+      Eğer yemekle, bedeninizle ya da kilonuzla ilgili düşünceler hayatınızın merkezine yerleştiyse, bu durum yeme davranışınızı ve ruh halinizi etkiliyorsa bir uzmana başvurmanız çok önemlidir. Yeme bozuklukları “geçici dönemler” değildir; tedavi edilmediğinde ciddi sağlık sorunlarına ve hayati tehlikelere yol açabilir. <br><br><br>
+
+      <b>Unutmayın: Değeriniz Kilonuzla Ölçülmez </b><br><br>
+      Yeme bozuklukları utanılacak hastalıklar değildir. Yardım istemek güçsüzlük değil, iyileşme yolunda atılan en önemli adımdır. Unutmayın, bedeninize ve ruhunuza iyi bakmak, kendinize duyduğunuz saygının en güzel göstergesidir.
+
+    </p>
+
+    </div>
+        </div>
+      </div>
+      
+      
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+      // Enable all alerts on the page
+      const alertList = document.querySelectorAll('.alert');
+      const alerts = [...alertList].map(element => new bootstrap.Alert(element));
+      
+      // Enable all popovers on the page
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+      
+      // Enable all tooltips on the page
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+    <!-- Google analytics script-->
+    <script type="text/javascript">
+      if(document.location.hostname == 'pratikborsadiya.in') {
+      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      	ga('create', 'UA-72504830-1', 'auto');
+      	ga('send', 'pageview');
+      }
+    </script>
+  </body>
+</html>

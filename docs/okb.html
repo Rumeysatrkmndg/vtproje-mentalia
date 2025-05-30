@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 5, SASS and PUG.js. It's fully customizable and modular.">
+    
+    <title>Psikolojik Hastalıklar: OKB</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="dashboard.html"><img src="images/logo.png"alt="Mentalia Logo"style=height:40px;></a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <li class="app-search">
+          <input class="app-search__input" type="search" placeholder="Ara">
+          <button class="app-search__button"><i class="bi bi-search"></i></button>
+        </li>
+        <!--Notification Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell fs-5"></i></a>
+          <ul class="app-notification dropdown-menu dropdown-menu-right">
+            <li class="app-notification__title">Henüz bildiriminiz yok.</li>
+          </ul>
+        </li>
+        <!-- User Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Open Profile Menu"><i class="bi bi-person fs-4"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+           
+            <li><a class="dropdown-item" href="profil.html"><i class="bi bi-person me-2 fs-5"></i> Profil</a></li>
+            <li><a class="dropdown-item" href="register.html"><i class="bi bi-box-arrow-in-left me-2 fs-5"></i> Üye Ol / Giriş Yap</a></li>
+            <li><a class="dropdown-item" href="cıkıs.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Çıkış</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="dashboard.html"><i class="bi bi-house-door"style="margin-right: 8px;"></i><span class="app-menu__label"> Anasayfa</span></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="bi bi-heart-pulse"style="margin-right: 8px;"></i><span class="app-menu__label">Psikolojik Hastalıklar</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="depresyon.html"><i class="icon bi bi-circle-fill"></i> Depresyon</a></li>
+            <li><a class="treeview-item" href="anksiyete.html"><i class="icon bi bi-circle-fill"></i> Anksiyete</a></li>
+            <li><a class="treeview-item" href="bipolar.html"><i class="icon bi bi-circle-fill"></i> Bipolar Bozukluk</a></li>
+            <li><a class="treeview-item active" href="okb.html"><i class="icon bi bi-circle-fill"></i> Obsesif Komppulsif Bozukluk</a></li>
+            <li><a class="treeview-item" href="sizofreni.html"><i class="icon bi bi-circle-fill"></i> Şizofreni</a></li>
+            <li><a class="treeview-item" href="yemebozuklugu.html"><i class="icon bi bi-circle-fill"></i> Yeme Bozukluğu</a></li>
+            <li><a class="treeview-item" href="hiperaktivite.html"><i class="icon bi bi-circle-fill"></i> Hiperaktivite Bozukluğu</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="bi bi-clipboard2-data"style="margin-right: 8px;"></i><span class="app-menu__label">Görülme Oranları</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="sehir.html"><i class="icon bi bi-circle-fill"></i> Şehirlere Göre</a></li>
+            <li><a class="treeview-item" href="cinsiyet.html"><i class="icon bi bi-circle-fill"></i> Cinsiyete Göre</a></li>
+            <li><a class="treeview-item" href="yas.html"><i class="icon bi bi-circle-fill"></i> Yaşa Göre</a></li>
+            <li><a class="treeview-item" href="genetik.html"><i class="icon bi bi-circle-fill"></i> Genetiğe Göre</a></li>
+            <li><a class="treeview-item" href="cevrefaktor.html"><i class="icon bi bi-circle-fill"></i> Çevresel Etkenlere Göre</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-ui-checks"></i><span class="app-menu__label">Testler</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="psikotest.html"><i class="icon bi bi-circle-fill"></i> Psikolojik Hastalık Belirleme Testi</a></li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="bi bi-bar-chart-line"style="margin-right: 8px;"></i><span class="app-menu__label">Grafikler ve Tablolar</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="verigrafik.html"><i class="icon bi bi-circle-fill"></i> Veri Grafikleri</a></li>
+            <li><a class="treeview-item" href="veritablo.html"><i class="icon bi bi-circle-fill"></i> Veri Tabloları</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="app-content">
+      <div class="app-title">
+        <div class="div">
+          <h1> Psikolojik Hastalılar</h1>
+          <p>Obsesif Kompulsif Bozukluk</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
+          <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col md-12">
+          <div class="card" style="width: auto; padding: 15px;">
+
+    <p>
+      <b>OKB (Obsesif Kompulsif Bozukluk) Nedir? </b><br><br>
+      Obsesif Kompulsif Bozukluk (OKB), kişinin zihnine istemsizce giren takıntılı düşünceler (obsesyonlar) ve bu düşüncelerin yarattığı kaygıyı azaltmak için yapılan tekrarlayıcı davranışlar (kompulsiyonlar) ile karakterize bir ruhsal bozukluktur.
+
+      OKB, sadece titizlik ya da düzen takıntısı değildir. Zihni meşgul eden, kontrol edilmesi zor düşünceler ve bu düşünceleri yatıştırmak için yapılan zorlayıcı hareketler, bireyin günlük yaşamını ciddi şekilde etkileyebilir. <br><br><br>
+
+      <b>OKB Belirtileri Nelerdir? </b><br><br>
+      🧠 Obsesyonlar (Takıntılı Düşünceler): <br>
+      Sürekli olarak akla gelen, istenmeyen ve rahatsız edici düşünceler, görüntüler ya da dürtüler
+
+      Bu düşünceler genellikle gerçek dışıdır ama kişi bunları mantık dışı bulsa bile engelleyemez. <br><br><br>
+
+      Yaygın obsesyon örnekleri: <br>
+
+      Mikroplardan ya da hastalanmaktan aşırı korkmak <br>
+
+      Kapının kilitli olup olmadığını tekrar tekrar düşünmek <br>
+
+      Birine zarar verme korkusu <br>
+
+      Simetri ya da düzen takıntısı <br>
+
+      Uygunsuz düşüncelerin zihne gelmesi (dini, cinsel, saldırgan içerikler) <br><br><br>
+
+      🔁 Kompulsiyonlar (Zorlayıcı Davranışlar): <br>
+      Obsesyonların yarattığı kaygıyı azaltmak için yapılan tekrar eden davranışlar ya da zihinsel eylemler 
+
+      Kısa süreli rahatlama sağlar ama uzun vadede takıntıları pekiştirir <br><br>
+
+      Yaygın kompulsiyon örnekleri:       <br> 
+
+        Sürekli el yıkama veya temizlik yapma <br>
+
+        Eşyaları belirli bir düzene koyma <br>
+
+        Aynı soruyu defalarca sorma <br>
+
+        Sürekli kontrol etme (ocağı kapatmak, kapıyı kilitlemek vb.) <br>
+
+        Belirli sayılarda sayma, dua etme, içinden tekrarlama <br><br><br>
+
+      <b>OKB Neden Olur? </b><br><br>
+      OKB’nin kesin nedeni tam olarak bilinmese de, birçok biyolojik ve çevresel faktörün etkileşimi sonucu ortaya çıktığı düşünülmektedir: <br>
+
+      Genetik yatkınlık: Ailede OKB öyküsü olan bireylerde risk artar <br>
+
+      Beyin kimyasındaki dengesizlikler: Serotonin gibi nörotransmitterlerdeki düzensizlikler etkili olabilir <br>
+
+      Beyin yapısı: Beynin bazı bölgelerinde farklılıklar gözlemlenmiştir <br> 
+
+      Çevresel faktörler: Travmatik yaşam olayları, stresli dönemler veya çocuklukta yaşanan zorluklar tetikleyici olabilir <br><br><br>
+
+      <b>OKB Tedavi Edilebilir mi?</b> <br><br>
+      Evet, OKB tedavi edilebilir bir rahatsızlıktır. Tedavi ile kişi takıntılarını yönetmeyi öğrenebilir ve yaşam kalitesini artırabilir. En etkili tedavi yöntemleri: <br>
+
+      Bilişsel Davranışçı Terapi (BDT): Özellikle “Maruz Bırakma ve Tepkiyi Önleme (ERP)” adı verilen yöntem, OKB tedavisinde en başarılı terapilerden biridir. <br>
+
+      İlaç tedavisi: Serotonin dengesini düzenleyen antidepresanlar (özellikle SSRI grubu ilaçlar) yaygın olarak kullanılır. <br>
+
+      Farkındalık ve gevşeme teknikleri: Meditasyon, nefes egzersizleri ve stres yönetimi destekleyici olabilir. <br>
+
+      Destek grupları: Benzer deneyimleri yaşayan kişilerle iletişim kurmak, yalnızlık hissini azaltabilir. <br><br><br>
+
+      <b>Ne Zaman Yardım Alınmalı? </b><br><br>
+      Eğer takıntılı düşünceler zihninizi meşgul ediyor, davranışlarınız sizi yoruyor ya da günlük yaşamınızı sekteye uğratıyorsa bir uzmana başvurmanız önemlidir. OKB, kişinin kendini suçlamasına ya da utanmasına neden olabilir ancak bu durum sizin seçiminiz değildir. Yardım istemek, güçlü bir adımdır. <br><br><br>
+
+      <b>Unutmayın: Takıntılarınız Siz Değilsiniz </b><br><br>
+      OKB, zorlayıcı bir rahatsızlık olabilir ama yönetilebilir. Profesyonel destekle, takıntılı düşüncelerinizin kontrolü sizde olabilir. Yardım istemekten çekinmeyin. Hayatınız, tekrarlayan düşünceler ve davranışlarla sınırlı olmak zorunda değil.
+
+
+    </p>
+
+    </div>
+        </div>
+      </div>
+
+      
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+      // Enable all alerts on the page
+      const alertList = document.querySelectorAll('.alert');
+      const alerts = [...alertList].map(element => new bootstrap.Alert(element));
+      
+      // Enable all popovers on the page
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+      
+      // Enable all tooltips on the page
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+    <!-- Google analytics script-->
+    <script type="text/javascript">
+      if(document.location.hostname == 'pratikborsadiya.in') {
+      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      	ga('create', 'UA-72504830-1', 'auto');
+      	ga('send', 'pageview');
+      }
+    </script>
+  </body>
+</html>

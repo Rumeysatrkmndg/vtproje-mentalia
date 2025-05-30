@@ -1,0 +1,31 @@
+
+ 
+#daysButton>button{
+    padding-bottom: 10px;
+    border: none;
+    color: #ADCADE;
+    background:none;
+    border-bottom: 2px solid #1976D2;
+}
+
+ 
+
+#today-cards{
+    background-color: #017981;
+    border-radius: 5px;
+    color: #101014;
+    display: flex;
+    justify-content: space-between;
+}
+
+#todayCenter{
+    display: flex;
+    justify-content: space-between;
+}
+
+#todayRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
